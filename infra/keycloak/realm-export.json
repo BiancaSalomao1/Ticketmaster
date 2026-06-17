@@ -1,0 +1,47 @@
+{
+  "id": "ticketmaster",
+  "realm": "ticketmaster",
+  "enabled": true,
+  "clientScopes": [
+    {
+      "name": "tickets:write",
+      "protocol": "openid-connect",
+      "attributes": {
+        "include.in.token.scope": "true"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "ticketmaster-api",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "defaultClientScopes": [
+        "web-origins",
+        "acr",
+        "roles",
+        "profile",
+        "tickets:write",
+        "email"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "bianca",
+      "enabled": true,
+      "email": "bianca@globaltech.com",
+      "firstName": "Bianca",
+      "lastName": "Dev",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}
