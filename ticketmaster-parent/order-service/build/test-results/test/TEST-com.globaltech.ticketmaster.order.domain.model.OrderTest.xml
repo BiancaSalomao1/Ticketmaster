@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.globaltech.ticketmaster.order.domain.model.OrderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-06-29T18:57:49.647Z" hostname="pop-os" time="0.005">
+  <properties/>
+  <testcase name="Should initialize a new order with pending payment status and 10 minutes expiration" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.002"/>
+  <testcase name="Should mark order as paid when status is pending payment" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.001"/>
+  <testcase name="Should cancel order with success when status is pending payment" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.0"/>
+  <testcase name="Should return true when order has passed its expiration time" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.001"/>
+  <testcase name="Should throw exception when trying to cancel a paid order without refund flow" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.001"/>
+  <testcase name="Should throw exception when trying to pay an order that is not pending" classname="com.globaltech.ticketmaster.order.domain.model.OrderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
